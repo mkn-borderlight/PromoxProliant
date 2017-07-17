@@ -20,7 +20,7 @@ http://www.debiantutorials.com/adding-a-sudoer-to-use-sudo-on-debian/
 ### Notes
 
 ------------------------------------------------
-<pr>#!/bin/bash
+<pre>#!/bin/bash
 
 # Configure timezone and locale to Swedish settings
 echo "Europe/Stockholm" > /etc/timezone && \
@@ -31,5 +31,4 @@ echo "Europe/Stockholm" > /etc/timezone && \
     dpkg-reconfigure --frontend=noninteractive locales && \
     update-locale LANG=en_US.UTF-8</pre>
 
-------------------------------------------------
 
