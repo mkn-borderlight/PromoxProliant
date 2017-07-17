@@ -1,19 +1,23 @@
 # PromoxProliant
 Scrip that will prepare a HPE ProLiant server with HPE addons.
 
-<h3>Sudoers</h3>
-
-http://www.debiantutorials.com/adding-a-sudoer-to-use-sudo-on-debian/
-
-
-<h3>proxmox-proliant.sh</h3>
+## proxmox-proliant.sh
 
 - Add Proxmox no subscription repository and removes the subscription repository
 - Adds HPE "Software Delivery Repository"
 - Adds PGP keys to above repositories
 
+## debian-lang.sh
 
-<h3>debian-lang.sh</h3>
+Define TZ and language settings.
+
+## Sudoers
+
+http://www.debiantutorials.com/adding-a-sudoer-to-use-sudo-on-debian/
+
+
+
+### Notes
 
 ------------------------------------------------
 <pr>#!/bin/bash
@@ -29,4 +33,3 @@ echo "Europe/Stockholm" > /etc/timezone && \
 
 ------------------------------------------------
 
-Define TZ and language settings.
